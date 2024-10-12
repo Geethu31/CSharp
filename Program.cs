@@ -12,6 +12,643 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            //30
+            //Count Digits of a Number
+            //Console.WriteLine("Enter a number: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //number = Math.Abs(number); //if negative convert to positive
+            //int count = 0;
+            //if (number == 0)
+            //{
+            //    count = 1;
+            //}
+            //else
+            //{
+            //    while (number > 0)
+            //    {
+            //        number /= 10; //remove the last digit
+            //        count++;
+            //    }
+            //}
+            //Console.WriteLine("Number of digits: " + count);
+            //Console.ReadLine();
+
+
+            //29
+            //Find maximum and minimum
+            //int max = int.MinValue; // Start with smallest integer
+            //int min = int.MaxValue; // Start with largest integer
+            //Console.WriteLine("Please enter 5 numbers:");
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.Write("Enter number:");
+            //    int number = int.Parse(Console.ReadLine());
+            //    if (number > max)
+            //    {
+            //        max = number;
+            //    }
+            //    if (number < min)
+            //    {
+            //        min = number;
+            //    }
+            //}
+            //Console.WriteLine($"The maximum number is: {max}");
+            //Console.WriteLine($"The minimum number is: {min}");
+            //Console.ReadLine();
+
+
+            //28
+            //Count Vowels and Consonants
+            //Console.WriteLine("Enter a string: ");
+            //string input = Console.ReadLine();
+            //string lowerInput = input.ToLower();
+            //int vowelCount = 0;
+            //int consonantCount = 0;
+            //for (int i = 0; i < lowerInput.Length; i++)
+            //{
+            //    char ch = lowerInput[i];
+            //    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            //    {
+            //        vowelCount++;
+            //    }
+            //    else if (ch >= 'a' && ch <= 'z')
+            //    {
+            //        consonantCount++;
+            //    }
+            //}
+            //Console.WriteLine("Number of vowels: " + vowelCount);
+            //Console.WriteLine("Number of consonants: " + consonantCount);
+            //Console.ReadLine();
+
+
+            //27
+            //Reverse a string
+            //Console.Write("Enter a string: ");
+            //string originalString = Console.ReadLine();
+            //string reversedString = "";
+            //for (int i = originalString.Length - 1; i >= 0; i--)
+            //{
+            //    reversedString += originalString[i];
+            //}
+            //Console.WriteLine("Reversed string: " + reversedString);
+            //Console.ReadLine();
+
+
+            //25
+            //Armstrong
+            //int number = 1; 
+            //Console.WriteLine("Armstrong numbers between 1 and 500:");
+            //while (number <= 500)
+            //{
+            //    int originalNumber = number; 
+            //    int sumOfCubes = 0;
+            //    int temp = number; 
+            //    while (temp > 0)
+            //    {
+            //        int digit = temp % 10; 
+            //        sumOfCubes += digit * digit * digit; 
+            //        temp /= 10; 
+            //    }
+            //    if (sumOfCubes == originalNumber)
+            //    {
+            //        Console.WriteLine(originalNumber); 
+            //    }
+
+            //    number++; 
+            //}
+            //Console.ReadLine();
+
+
+            //24
+            //Fibonacci Sequence
+            //int firstNumber = 0;
+            //int secondNumber = 1;
+
+            //for (int i = 1; i <= 10; i++) 
+            //{
+            //    int nextNumber = firstNumber + secondNumber; 
+            //    Console.WriteLine(nextNumber);
+            //    firstNumber = secondNumber;
+            //    secondNumber = nextNumber;
+            //}
+            //Console.ReadLine();
+
+
+            //23
+            //Skip Multiples of 4
+            //for (int i = 1; i <= 50; i++)
+            //{
+            //    if (i % 4 == 0)
+            //    { 
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            //Console.ReadLine();
+
+
+
+            //22
+            //Menu-driven string operations
+            //Console.WriteLine("Enter a string: ");
+            //string inputString = Console.ReadLine();
+            //Console.WriteLine("\nSelect an operation:");
+            //Console.WriteLine("1. Reverse the string");
+            //Console.WriteLine("2. Convert to uppercase");
+            //Console.WriteLine("3. Convert to lowercase");
+            //Console.WriteLine("4. Find the length of the string");
+            //Console.Write("Enter your choice (1-4): ");
+            //int choice;
+            //if (int.TryParse(Console.ReadLine(), out choice))
+            //{
+            //    switch (choice)
+            //    {
+            //        case 1:
+            //            string reversedString = "";
+            //            for (int i = inputString.Length - 1; i >= 0; i--)
+            //            {
+            //                reversedString += inputString[i];
+            //            }
+            //            Console.WriteLine("Reversed string: " + reversedString);
+            //            break;
+            //        case 2:
+            //            string upperCaseString = inputString.ToUpper();
+            //            Console.WriteLine("Uppercase string: " + upperCaseString);
+            //            break;
+
+            //        case 3:
+            //            string lowerCaseString = inputString.ToLower();
+            //            Console.WriteLine("Lowercase string: " + lowerCaseString);
+            //            break;
+
+            //        case 4:
+            //            int length = inputString.Length;
+            //            Console.WriteLine("Length of the string: " + length);
+            //            break;
+
+            //        default:
+            //            Console.WriteLine("Invalid");
+            //            break;
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input!");
+            //}
+            //Console.ReadLine();
+
+
+            //21
+            //Reverse a number
+            //Console.WriteLine("Enter a number");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //string reversedNumber = " ";
+            //string numberStr = number.ToString();
+            //int length = numberStr.Length; 
+            //int i = length - 1;
+            //do
+            //{
+            //    reversedNumber += numberStr[i]; 
+            //    i--; 
+            //}
+            //while (i >= 0); 
+            //Console.WriteLine("Reversed number: " + reversedNumber);
+            //Console.ReadLine();
+
+
+
+
+            //20
+            //Average of positive numbers
+            //        double sum = 0;
+            //        int count = 0;
+            //        int num;
+            //        do
+            //        {
+            //        Console.WriteLine("enter a number");
+            //        num = Convert.ToInt32(Console.ReadLine());
+            //            if (num>= 0)
+            //            {
+            //                sum += num;
+            //                count++;
+            //            }
+            //}
+            //while (num >= 0) ;
+            //if (count > 0)
+            //{
+            //    double average = sum / count;
+            //    Console.WriteLine($"The average is {average}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No avaerage");
+            //}
+            //Console.ReadLine();
+
+
+            //19
+            //Palindrome
+            //Console.WriteLine("Enter a number:");
+            //string originalNumber = Console.ReadLine();
+            //int start = 0;
+            //int end = originalNumber.Length - 1;
+            //bool isPalindrome = true;
+            //while (start < end)
+            //{
+            //    if (originalNumber[start] != originalNumber[end])
+            //    {
+            //        isPalindrome = false;
+            //        break;
+            //    }
+            //    start++;
+            //    end--;
+            //}
+            //if (isPalindrome)
+            //{
+            //    Console.WriteLine($"{originalNumber} is a palindrome");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{originalNumber} is not a palindrome");
+            //}
+            //Console.ReadLine();
+
+
+            //18
+            //Print non-multiples of 3
+            //for (int i = 1; i <= 20; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            //Console.ReadLine();
+        }
+    }
+    }
+
+
+
+            //17
+            //Finding first multiple of 5
+            //int[] numbers = { 3, 7, 2, 10, 24, 35 };
+            //for (int i = 0; i < numbers.Length; i++) 
+            //{
+            //    if (numbers[i] % 5 == 0)
+            //    {
+            //        Console.WriteLine("First multiple of 5 found: " + numbers[i]);
+            //        break;
+            //    }
+            //}
+            //Console.ReadLine();
+
+
+//16
+//Countdown Timer
+//int countdown = 10;
+//do
+//{
+//    Console.WriteLine(countdown);
+//    countdown--;
+//    System.Threading.Thread.Sleep(1000);
+//}
+//while(countdown > 0);
+//Console.WriteLine("The countdown is completed");
+//Console.ReadLine();
+
+//15
+//Sum of squares
+//Console.Write("Enter a positive integer: ");
+//int number = Convert.ToInt32(Console.ReadLine());
+//int sumOfSquares = 0;
+//int number1 = 1;
+//while (number1 <= number)
+//{
+//    sumOfSquares += number1 * number1; 
+//    number1++; 
+//}
+//Console.WriteLine($"The sum of squares from 1 to {number} is: {sumOfSquares}");
+//Console.ReadLine();
+
+
+//14
+//Accepts 10 value from user and find the largest
+//int n = 10;
+//int largestNumber = int.MinValue;
+//Console.WriteLine("Please enter 10 numbers:");
+//for (int i = 0; i < n; i++)
+//{
+//    Console.Write($"Enter number {i + 1}: ");
+//    int number = Convert.ToInt32(Console.ReadLine());
+//    if (number > largestNumber)
+//    {
+//        largestNumber = number;
+//    }
+//}
+//Console.WriteLine($"The largest number entered is: {largestNumber}");
+//Console.ReadLine();
+
+
+//13
+//sum of digits
+//Console.Write("Enter a number:");
+//int number = Convert.ToInt32(Console.ReadLine());
+//int sum = 0; 
+//int digit;
+//do
+//{
+//    digit = number % 10; 
+//    sum += digit; 
+//    number /= 10; 
+//} while (number > 0); 
+//Console.WriteLine($"The sum of the digits is: {sum}");
+//Console.ReadLine();
+
+
+//12
+//simple calculator using a switch-case statement
+//double num1, num2, result;
+//char operation;
+//Console.Write("Enter the first number: ");
+//num1 = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Enter the second number: ");
+//num2 = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Select an operation: ");
+//Console.WriteLine(" +  : Addition");
+//Console.WriteLine(" -  : Subtraction");
+//Console.WriteLine(" *  : Multiplication");
+//Console.WriteLine(" /  : Division");
+//Console.Write("Enter the operation (+, -, *, /): ");
+//operation = Console.ReadLine()[0];
+//switch (operation)
+//{
+//    case '+':
+//        result = num1 + num2;
+//        Console.WriteLine($"{num1} + {num2} = {result}");
+//        break;
+
+//    case '-':
+//        result = num1 - num2;
+//        Console.WriteLine($"{num1} - {num2} = {result}");
+//        break;
+
+//    case '*':
+//        result = num1 * num2;
+//        Console.WriteLine($"{num1} * {num2} = {result}");
+//        break;
+
+//    case '/':
+//        if (num2 != 0)
+//        {
+//            result = num1 / num2;
+//            Console.WriteLine($"{num1} / {num2} = {result}");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Error: Division by zero is not allowed.");
+//        }
+//        break;
+
+//    default:
+//        Console.WriteLine("Invalid");
+//        break;
+//}
+//Console.ReadLine();
+
+
+
+//11
+//Guess a number
+//Random random = new Random(); 
+//int playAgain;
+//do
+//{
+//    int randomnumber = random.Next(1, 101);
+//    int userGuess = 0;
+//    int attempts = 0;
+//    Console.WriteLine("Guess the number between 1 and 100!");
+//    int randomNumber = Convert.ToInt32(Console.ReadLine());
+//    do
+//    {
+//        Console.Write("Enter your guess: ");
+//        userGuess = Convert.ToInt32(Console.ReadLine());
+//        attempts++;
+//        if (userGuess > randomNumber)
+//        {
+//            Console.WriteLine("Too high! Try again.");
+//        }
+//        else if (userGuess < randomNumber)
+//        {
+//            Console.WriteLine("Too low! Try again.");
+//        }
+//        else
+//        {
+//            Console.WriteLine($"Congratulations! You've guessed the number {randomNumber} in {attempts} attempts.");
+//        }
+//    } while (userGuess != randomNumber);
+//    Console.Write("Do you want to play again? (1 for Yes, 0 for No): ");
+//    playAgain = Convert.ToInt32(Console.ReadLine());
+
+//} while (playAgain == 1);
+
+//Console.WriteLine("Thanks for playing!");
+//Console.ReadLine();
+
+
+
+//10
+//print a number pyramid
+//int rows = 5; 
+//int currentRow = 1; 
+//while (currentRow <= rows)
+//{
+//    int column = 1; 
+//    while (column <= currentRow)
+//    {
+//        Console.Write(currentRow + " "); 
+//        column++; 
+//    }
+
+//    Console.WriteLine(); 
+//    currentRow++; 
+//}
+//Console.ReadLine();
+
+
+//9
+//factorial of a number
+//Console.Write("Enter a number:");
+//int number = Convert.ToInt32(Console.ReadLine());
+//int  factorial = 1;
+//while (number > 0)
+//{
+//    factorial *= number;
+//    number--;
+//}
+//Console.WriteLine($"The factorial is {factorial}");
+//Console.ReadLine();
+
+
+//8
+//Sum of all odd number between 1 and 100
+//int sum = 0;
+//for (int number = 1; number <= 100; number++)
+//{
+//    if (number % 2 != 0)
+//    {
+//        sum += number;
+//    }
+//}
+//Console.WriteLine("The sum of all odd numbers between 1 and 100 is: " + sum);
+//Console.ReadLine();
+
+
+//7
+//C# program to print all numbers from 1 to 100 ,skip numbers that are divisible by 3
+//for (int number = 1; number <= 100; number++)
+//{
+//    if (number % 3 == 0)
+//    {
+//        continue;
+//    }
+//    if (number > 50)
+//    {
+//        break;
+//    }
+
+//    Console.WriteLine(number);
+//}
+//Console.ReadLine();
+
+
+
+//6
+//Basic menu-driven calculator using nested do-while loops
+//int choice;
+//do
+//{
+//    Console.WriteLine("1. Addition");
+//    Console.WriteLine("2. Subtraction");
+//    Console.WriteLine("3. Multiplication");
+//    Console.WriteLine("4. Division");
+//    Console.WriteLine("5. Exit");
+//    Console.Write("Enter your choice: ");
+//    choice = Convert.ToInt32(Console.ReadLine());
+
+//    if (choice >= 1 && choice <= 4)
+//    {
+//        double num1, num2;
+//        Console.Write("Enter the first number: ");
+//        num1 = Convert.ToDouble(Console.ReadLine());
+
+//        Console.Write("Enter the second number: ");
+//        num2 = Convert.ToDouble(Console.ReadLine());
+
+//        switch (choice)
+//        {
+//            case 1:
+//                Console.WriteLine("Result: " + (num1 + num2));
+//                break;
+//            case 2:
+//                Console.WriteLine("Result: " + (num1 - num2));
+//                break;
+//            case 3:
+//                Console.WriteLine("Result: " + (num1 * num2));
+//                break;
+//            case 4:
+//                if (num2 != 0)
+//                    Console.WriteLine("Result: " + (num1 / num2));
+//                else
+//                    Console.WriteLine("Error: Division by zero is not allowed.");
+//                break;
+//        }
+//    }
+//    else if (choice != 5)
+//    {
+//        Console.WriteLine("Invalid choice");
+//    }
+
+//} while (choice != 5);
+
+//Console.WriteLine("Calculator exited");
+
+//5
+//Enter a positive number
+//Console.WriteLine("Enter a number");
+//int number = Convert.ToInt32(Console.ReadLine());
+//    if (number >= 0)
+//    {
+//        Console.WriteLine($"Entered is a positive number {number}");
+//    }
+//else
+//    {
+//    Console.WriteLine("Stopped");
+//}
+//Console.ReadLine();
+
+
+//4
+//Multiplication of 1 to 5
+//int i = 1;
+//while (i <= 5)
+//{
+//    int j = 1;
+//    while (j <= 10)
+//    {
+//        Console.WriteLine($"{j}*{i} = {i*j}");
+//        j++;
+//    }
+//    Console.WriteLine();
+//    i++;
+//}
+//Console.ReadLine();
+
+//3
+//Sum of even number from 1 to 100
+//int i = 1, sum = 0;
+//while (i <= 100)
+//{
+//    if (i % 2 == 0)
+//    {
+//        sum += i;
+//    }
+//    i++;
+//}
+//Console.WriteLine("The sum of even numbers from 1 to 100 is" +sum);
+//Console.ReadLine();
+
+
+//2
+//Right angle triangle
+//Console.WriteLine("Enter number of rows:");
+//int rows = Convert.ToInt32(Console.ReadLine());
+//for (int i = 0; i < rows; i++)
+//{
+//    for (int j = 0; j <= i; j++)
+//    {
+//        Console.Write("*");
+
+//    }
+//    Console.WriteLine();
+//}
+//Console.ReadLine();
+
+
+//1
+//Multiplication
+//Console.WriteLine("Enter a number");
+//int number = Convert.ToInt32(Console.ReadLine());
+//for (int i = 1; i <= 10; i++)
+//{
+//    int product = i * number;
+//    Console.WriteLine($"{number}*{i} = {product}");
+//}
+//Console.ReadLine();
+ ---------------------------------------------------------------------------------------------------------------------------------------------------           
 //35            
 Console.WriteLine("Enter your annual salary: ");
 double salary = Convert.ToDouble(Console.ReadLine());
