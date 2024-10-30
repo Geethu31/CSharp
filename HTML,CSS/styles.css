@@ -1,0 +1,46 @@
+body {
+    font-family: 'Times New Roman';
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+/* Center content container */
+.container {
+    text-align: left;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styling for the heading */
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Styling for the bio paragraph */
+.bio {
+    font-size: 18px;
+    color: black;
+    margin: 10px 0;
+}
+.hobbies {
+    text-align: left; /* Align hobbies to the left */
+    margin-top: 20px; /* Space above hobbies */
+}
+
+/* Styling for the list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    color: black;
+    margin: 5px 0;
+}
