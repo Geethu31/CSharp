@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+
+    <h1>Change Background Color</h1>
+    <label for="colorInput">Select a color:</label>
+    <input type="color" id="colorInput" />
+
+    <script>
+        const colorInput = document.getElementById('colorInput');
+        colorInput.addEventListener('input', function() {
+            document.body.style.backgroundColor = colorInput.value;
+        });
+    </script>
+
+</body>
+</html>

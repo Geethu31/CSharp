@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Choice Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        .results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Multiple Choice Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <h2>1. What does HTML stands for?</h2>
+                <label>
+                    <input type="radio" name="Q1" value="A"> A) Hypertext Markup Language
+                </label><br>
+                <label>
+                    <input type="radio" name="Q1" value="B"> B) Hyperlink and Text Markup Language
+                </label><br>
+                <label>
+                    <input type="radio" name="Q1" value="C"> C) HyperText Multi Language
+                </label><br>
+            </div>
+            <div class="question">
+                <h2>2. What does SQL stands for?</h2>
+                <label>
+                    <input type="radio" name="Q2" value="A"> A) Simple Query Language
+                </label><br>
+                <label>
+                    <input type="radio" name="Q2" value="B"> B) Structured Query Language
+                </label><br>
+                <label>
+                    <input type="radio" name="Q2" value="C"> C) Standard Query Language
+                </label><br>
+            </div>
+            <div class="question">
+                <h2>3. What does CSS stands for?</h2>
+                <label>
+                    <input type="radio" name="Q3" value="A"> A) Creative Style Sheets
+                </label><br>
+                <label>
+                    <input type="radio" name="Q3" value="B"> B) Computer Style Sheets
+                </label><br>
+                <label>
+                    <input type="radio" name="Q3" value="C"> C) Cascading Style Sheets
+                </label><br>
+            </div>
+            <button type="button" id="submitButton">Submit</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+
+    <script>
+        const submitButton = document.getElementById('submitButton');
+        const resultsDiv = document.getElementById('results');
+
+        const correctAnswers = {
+            Q1: 'A',
+            Q2: 'B',
+            Q3: 'C'
+        };
+        function displayResults(form) {
+        let score = 0;
+        let resultsHtml = '';
+
+        for (let question in correctAnswers) {
+            const userAnswer = form[question].value; 
+            if (userAnswer === correctAnswers[question]) {
+                score++; 
+                resultsHtml += "<p>" + question + ": Correct!</p>";
+            } else {
+                resultsHtml += "<p>" + question + ": Wrong! The correct answer is " + correctAnswers[question] + ".</p>";
+            }
+        }
+
+        resultsHtml += "<p>Your score: " + score + " out of " + Object.keys(correctAnswers).length + "</p>";
+        resultsDiv.innerHTML = resultsHtml;
+    }
+
+    submitButton.addEventListener('click', () => {
+        const form = document.getElementById('quizForm');
+        displayResults(form);
+    });
+    </script>
+</body>
+</html>
